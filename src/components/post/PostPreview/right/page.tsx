@@ -10,7 +10,7 @@ interface Iprops {
 export default function RHeroPostPreview({ datas }: Iprops) {
   return (
     <div className="card">
-      <div className="img h-[300px]">
+      <div className="img md:h-[300px]">
         <Image
           src="/h.png"
           alt="hjkh"
@@ -36,7 +36,7 @@ export default function RHeroPostPreview({ datas }: Iprops) {
           </a>
           <span className="!text-gray-400">{datas.date}</span>
         </div>
-        <p  className="!text-white">{datas.para}</p>
+        <p className="!text-white md:block hidden">{datas.para}</p>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ export default function LHeroPostPreview({ datas }: Iprops) {
           </a>
           <span className="!text-gray-400">{datas.date}</span>
         </div>
-        <p className="!text-white">{datas.para}</p>
+        <p className="!text-white md:block hidden">{datas.para}</p>
       </div>
     </div>
   );

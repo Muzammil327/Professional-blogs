@@ -42,7 +42,7 @@ export default function Header() {
                 <ul
                   className={`transition-one ${
                     open
-                      ? "flex flex-col absolute top-0 ml-4 right-0 h-full w-6/12 pt-5 bg-gray-100 z-30"
+                      ? "flex flex-col absolute top-0 ml-4 right-0 h-full w-8/12 pt-8 bg-gray-100 z-30"
                       : "flex gap-5 relative"
                   }`}
                 >
@@ -53,7 +53,7 @@ export default function Header() {
                           <span
                             className={`${
                               open
-                                ? "py-2 flex items-start justify-start"
+                                ? "py-1 flex items-start justify-start"
                                 : "t1 font-bold hover:t2 c gap-1 cursor-pointer"
                             }`}
                             onClick={() => handleDropdownToggle(index)}
@@ -84,10 +84,10 @@ export default function Header() {
                       ) : (
                         <>
                           <a
-                            href={`{data.link}`}
+                            href={`${data.link}`}
                             className={`${
                               open
-                                ? "p-3 flex items-start justify-start border-b-2 border-solid border-gray-300 transition-all hover:border-gray-200"
+                                ? "px-3 py-2 flex items-start justify-start border-b-2 border-solid border-gray-300 transition-all hover:border-gray-200"
                                 : "t1 font-bold hover:t2 c gap-1 cursor-pointer"
                             }`}
                           >
@@ -120,18 +120,13 @@ const data = [
   },
   {
     id: 3,
-    title: "About Us",
-    link: "/documentation",
+    title: "Tags",
+    link: "/tag",
   },
   {
-    id: 3,
-    title: "Contact Us",
-    link: "/documentation",
-  },
-  {
-    id: 5,
-    title: "Documentation",
-    link: "/contact-us",
+    id: 4,
+    title: "Team",
+    link: "/author",
     // children: [
     //   {
     //     id: 1,
