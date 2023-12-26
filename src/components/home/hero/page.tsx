@@ -10,15 +10,15 @@ export default function HomeHero() {
 
   return (
     <Container>
-      <div className="hero grid md:grid-cols-6 md:gap-2">
-        <div className="md:col-span-2">
+      <div className="hero grid lg:grid-cols-6">
+        <div className="lg:col-span-2">
           {postMetadata.slice(0, 1).map((data: PostCard) => (
             <>
               <LHeroPostPreview datas={data} key={data.id} />
             </>
           ))}
         </div>
-        <div className="col-span-4 grid md:grid-cols-2">
+        <div className="lg:col-span-4 grid md:grid-cols-2">
           {postMetadata.slice(1, 5).map((data: PostCard) => (
             <>
               <RHeroPostPreview datas={data} key={data.id} />
