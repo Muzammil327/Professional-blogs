@@ -17,7 +17,7 @@ export default function SubHeader() {
                 <Link href="/">About</Link>
               </li>
               <li>
-                <Link href="/">Contact</Link>
+                <Link href="/">Contacts</Link>
               </li>
             </ul>
           </div>
