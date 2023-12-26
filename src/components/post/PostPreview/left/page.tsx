@@ -18,20 +18,20 @@ export default function LHeroPostPreview({ datas }: Iprops) {
           height={500}
           className="mb-2"
         />
-        <div className="cat">
+        <div className="cat md:block hidden">
           <a href={`/catgeory/${datas.catslug}`}>{datas.cat}</a>
         </div>
-        <div className="tag">
+        <div className="tag md:block hidden">
           <a href={`/tag/${datas.tagslug}`}>{datas.tag}</a>
         </div>
       </div>
-      <div className="content absolute bottom-0 !p-4">
-        <Link href={`/posts/${datas.slug}`} className="!text-white">
+      <div className="content absolute bottom-0 !p-4 ">
+        <Link href={`/posts/${datas.slug}`} className="!text-white md:!text-xl !text-sm">
           {datas.title}
         </Link>
 
         <div className="inner">
-          <a href={`/author/${datas.authorslug}`}>
+          <a href={`/author/${datas.authorslug}`} >
             <span className="!text-gray-400">by </span>{datas.author}
           </a>
           <span className="!text-gray-400">{datas.date}</span>

@@ -16,11 +16,11 @@ export default function ViewHome() {
       <LatestPost />
       <div className="lg:py-6">
         <Container>
-          <div className="grid lg:grid-cols-8 grid-cols-1 gap-4">
-            <div className="col-span-6">
+          <div className="grid lg:grid-cols-8 grid-cols-1 md:gap-4">
+            <div className="md:col-span-6">
               <LeftPost />
             </div>
-            <div className="col-span-2">
+            <div className="md:col-span-2">
               <RightPost />
             </div>
           </div>

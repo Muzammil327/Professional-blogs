@@ -107,11 +107,6 @@ export default function Page() {
                       Contact Us
                     </Link>
                   </li>
-                  <li>
-                  <Link href="/">
-                      RTL Version
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>
