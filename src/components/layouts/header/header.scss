@@ -1,0 +1,22 @@
+.header {
+    .inner {
+        @apply b py-4;
+
+        .left {
+            @apply c;
+
+            .toggle {
+                @apply block md:hidden absolute bg-red-400 p-2 text-white cursor-pointer rounded z-40 transition-one;
+            }
+
+            .logo {
+                @apply pr-8;
+                a{
+                    img {
+                        @apply h-12 w-auto;
+                    }
+                }
+            }
+        }
+    }
+}
