@@ -42,7 +42,7 @@ export default function Header() {
                 <ul
                   className={`transition-one ${
                     open
-                      ? "flex flex-col absolute top-0 ml-4 right-0 h-full w-6/12 pt-5 bg-gray-100 z-30"
+                      ? "flex flex-col absolute top-0 ml-4 right-0 h-full w-8/12 pt-5 bg-gray-100 z-30"
                       : "flex gap-5 relative"
                   }`}
                 >
@@ -53,7 +53,7 @@ export default function Header() {
                           <span
                             className={`${
                               open
-                                ? "py-2 flex items-start justify-start"
+                                ? "py-1 flex items-start justify-start"
                                 : "t1 font-bold hover:t2 c gap-1 cursor-pointer"
                             }`}
                             onClick={() => handleDropdownToggle(index)}
