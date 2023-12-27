@@ -4,6 +4,14 @@ import LatestPostPreview from "@/src/components/post/PostPreview/LatestPost/page
 import PostMetadata from "@/src/components/post/PostMetadata/page";
 import Hero from "@/src/components/hero/page";
 
+
+export const generateStaticParams = async () => {
+  const posts = PostMetadata();
+  return posts.map((post) => ({
+    authorslug: post.authorslug,
+  }));
+};
+
 function Page({ params }: { params: { authorslug: string } }) {
   const postMetadata = PostMetadata();
   return (
