@@ -26,7 +26,7 @@ export default function LHeroPostPreview({ datas }: Iprops) {
         </div>
       </div>
       <div className="content absolute bottom-0 !p-4 ">
-      <Link href={`/posts/${datas.slug}`} className="!text-white md:!text-xl !text-[18px]">
+      <Link href={`/posts/${datas.slug}`} className="!text-white">
           {datas.title}
         </Link>
 
