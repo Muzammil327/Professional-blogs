@@ -25,16 +25,6 @@ const directories = [
   "src/app/posts/docs/fashion/",
 ];
 
-// const getPostContent = (slug: string) => {
-//   const folder = "src/app/posts/docs/download/";
-
-//   // const file = `${folder}${slug}.md`;
-//   const file = path.join(folder, `${slug}.md`);
-
-//   const content = fs.readFileSync(file, "utf8");
-//   const matterResult = matter(content);
-//   return matterResult;
-// };
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
