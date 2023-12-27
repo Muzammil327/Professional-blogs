@@ -4,24 +4,13 @@ import LatestPostPreview from "@/src/components/post/PostPreview/LatestPost/page
 import PostMetadata from "@/src/components/post/PostMetadata/page";
 import Hero from "@/src/components/hero/page";
 
-export const generateStaticParams = async () => {
-  const posts = PostMetadata();
-  return posts.map((post) => ({
-    authorslug: post.authorslug,
-  }));
-};
-
-function Page(props:any
-  // { params }: { params: { authorslug: string,  } }
-  ) {
-  const slug = props.params.slug;
-
+function Page({ params }: { params: { authorslug: string } }) {
   const postMetadata = PostMetadata();
   return (
     <>
-      <Hero title={slug} />
+      <Hero title={params.authorslug} />
 
-      {/* <Container>
+      <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 ">
           {postMetadata
             .filter((post) => post.authorslug === params.authorslug)
@@ -29,7 +18,7 @@ function Page(props:any
               <LatestPostPreview datas={data} key={data.id} />
             ))}
         </div>
-      </Container> */}
+      </Container>
     </>
   );
 }
